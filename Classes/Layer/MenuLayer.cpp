@@ -220,8 +220,8 @@ bool MenuLayer::init()
 
 MenuItemSprite * MenuLayer::createMenuItem(std::string fileName, const ccMenuCallback & callback)
 {
-	SpriteFrame* startFrame = SpriteFrame::create(fileName + ".png", Rect(59, 68, 162, 60));
-	SpriteFrame* disFrame = SpriteFrame::create(fileName + "_dis.png", Rect(59, 68, 162, 60));
+	SpriteFrame* startFrame = SpriteFrame::create(fileName + ".png", Rect(59.0f, 68.0f, 162.0f, 60.0f));
+	SpriteFrame* disFrame = SpriteFrame::create(fileName + "_dis.png", Rect(59.0f, 68.0f, 162.0f, 60.0f));
 	Sprite* startNormal = Sprite::createWithSpriteFrame(startFrame);
 	Sprite* startSelect = Sprite::createWithSpriteFrame(startFrame);
 	Sprite* startDis = Sprite::createWithSpriteFrame(disFrame);
