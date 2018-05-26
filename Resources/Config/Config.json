@@ -1,0 +1,57 @@
+{
+    "enemy":
+    [
+        {"ID":1,"name":"骷髅人","Image":"enemy1_1.png", "Life":50,"Attack":42,"Defense":6,"Gold":6,"Experience":6},
+        {"ID":2,"name":"骷髅士兵","Image":"enemy2_1.png", "Life":55,"Attack":52,"Defense":12,"Gold":8,"Experience":30},
+        {"ID":3,"name":"骷髅队长","Image":"enemy3_1.png", "Life":100,"Attack":65,"Defense":15,"Gold":30,"Experience":30},
+        {"ID":4,"name":"鬼战士","Image":"enemy4_1.png", "Life":220,"Attack":180,"Defense":30,"Gold":35,"Experience":30},
+        {"ID":5,"name":"小蝙蝠","Image":"enemy5_1.png", "Life":35,"Attack":38,"Defense":3,"Gold":3,"Experience":3},
+        {"ID":6,"name":"大蝙蝠","Image":"enemy6_1.png", "Life":60,"Attack":100,"Defense":8,"Gold":12,"Experience":3},
+        {"ID":7,"name":"吸血蝙蝠","Image":"enemy7_1.png", "Life":200,"Attack":390,"Defense":90,"Gold":50,"Experience":3},
+        {"ID":8,"name":"吸血鬼","Image":"enemy8_1.png", "Life":444,"Attack":199,"Defense":66,"Gold":144,"Experience":3},
+        {"ID":9,"name":"绿史莱姆","Image":"enemy9_1.png", "Life":35,"Attack":18,"Defense":1,"Gold":1,"Experience":1},
+        {"ID":10,"name":"红史莱姆","Image":"enemy10_1.png","Life":45,"Attack":20,"Defense":2,"Gold":2,"Experience":2},
+        {"ID":11,"name":"大史莱姆","Image":"enemy11_1.png","Life":130,"Attack":60,"Defense":3,"Gold":8,"Experience":2},
+        {"ID":12,"name":"史莱姆王","Image":"enemy12_1.png","Life":360,"Attack":310,"Defense":20,"Gold":40,"Experience":2},
+        {"ID":13,"name":"初级法师","Image":"enemy13_1.png","Life":60,"Attack":32,"Defense":8,"Gold":5,"Experience":5},
+        {"ID":14,"name":"高级法师","Image":"enemy14_1.png","Life":100,"Attack":95,"Defense":30,"Gold":18,"Experience":5},
+        {"ID":15,"name":"初级巫师","Image":"enemy15_1.png","Life":220,"Attack":370,"Defense":110,"Gold":80,"Experience":5},
+        {"ID":16,"name":"高级巫师","Image":"enemy16_1.png","Life":200,"Attack":380,"Defense":130,"Gold":90,"Experience":5},
+        {"ID":17,"name":"兽人","Image":"enemy17_1.png","Life":260,"Attack":85,"Defense":5,"Gold":22,"Experience":5},
+        {"ID":18,"name":"兽人武士","Image":"enemy18_1.png","Life":320,"Attack":120,"Defense":15,"Gold":30,"Experience":5},
+        {"ID":19,"name":"石头人","Image":"enemy19_1.png","Life":20,"Attack":100,"Defense":68,"Gold":28,"Experience":5},
+        {"ID":21,"name":"初级卫兵","Image":"enemy21_1.png","Life":50,"Attack":48,"Defense":22,"Gold":12,"Experience":5},
+        {"ID":22,"name":"中级卫兵","Image":"enemy22_1.png","Life":100,"Attack":180,"Defense":110,"Gold":50,"Experience":55},
+        {"ID":23,"name":"高级卫兵","Image":"enemy23_1.png","Life":180,"Attack":460,"Defense":360,"Gold":200,"Experience":55},
+        {"ID":24,"name":"双手剑士","Image":"enemy24_1.png","Life":100,"Attack":680,"Defense":50,"Gold":55,"Experience":55}
+    ],
+    "item":
+    [
+        {"ID":1,"name":"红宝石","Image":"item1.png","Type":1,"AddNum":3},
+        {"ID":2,"name":"蓝宝石","Image":"item2.png","Type":2,"AddNum":3},
+        {"ID":5,"name":"红血瓶","Image":"item5.png","Type":3,"AddNum":300},
+        {"ID":6,"name":"蓝血瓶","Image":"item6.png","Type":3,"AddNum":150},
+        {"ID":17,"name":"黄钥匙","Image":"item17.png","Type":4,"AddNum":1},
+        {"ID":18,"name":"蓝钥匙","Image":"item18.png","Type":5,"AddNum":1},
+        {"ID":19,"name":"红钥匙","Image":"item19.png","Type":6,"AddNum":1},
+        {"ID":30,"name":"记事本","Image":"item30.png","Type":3,"AddNum":10000},
+        {"ID":40,"name":"十字架","Image":"item40.png","Type":3,"AddNum":10000},
+        {"ID":49,"name":"初级剑","Image":"item49.png","Type":1,"AddNum":10},
+        {"ID":53,"name":"中级剑","Image":"item53.png","Type":1,"AddNum":50},
+        {"ID":57,"name":"初级盾","Image":"item57.png","Type":2,"AddNum":10},
+        {"ID":58,"name":"中级盾","Image":"item58.png","Type":2,"AddNum":50}
+    ],
+    "door":
+    [
+        {"ID":1,"Image":"door_1_1.png","ExpendType":4,"ExpendNum":1},
+        {"ID":2,"Image":"door_1_2.png","ExpendType":5,"ExpendNum":1},
+        {"ID":3,"Image":"door_1_3.png","ExpendType":6,"ExpendNum":1},
+        {"ID":4,"Image":"door_1_4.png","ExpendType":0,"ExpendNum":0},
+        {"ID":5,"Image":"door_1_5.png","ExpendType":0,"ExpendNum":0}
+    ],
+    "npc":
+    [
+        {"ID":1,"Image":"npc01_1_1.png"},
+        {"ID":2,"Image":"npc01_2_1.png"}
+    ]
+}

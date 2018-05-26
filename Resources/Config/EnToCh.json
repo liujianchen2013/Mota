@@ -1,0 +1,22 @@
+{
+    "Warning":"警告",
+    "Click ok to overwrite the archive. Are you sure you want to restart the game?":
+    "单击确定将覆盖存档。你确定你想重新开始游戏吗？",
+    "Are you sure you want to give up the current game?":
+    "你确定要放弃当前的游戏进度吗？",
+    "Are you sure you want to overwrite the original archive with the current archive?":
+    "您确定要用当前存档覆盖原来的存档吗？",
+    "Is the current progress saved?":
+    "退出前是否要保存当前游戏进度？(点击确定会覆盖原始的进度)",
+    "Be no fighting match":"打不过",
+    "Attack":"攻   击",
+    "Defense":"防   御",
+    "Life":"生   命",
+    "YellowKey":"黄钥匙",
+    "BlueKey":"蓝钥匙",
+    "RedKey":"红钥匙",
+    "ATK":"攻击",
+    "DEF":"防御",
+    "HP":"生命",
+    "Not key":"没有钥匙"
+}
