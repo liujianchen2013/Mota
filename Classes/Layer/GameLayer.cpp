@@ -3,6 +3,7 @@
 #include "Tool/GameSave.h"
 #include "Layer/MenuLayer.h"
 #include "Layer/ShowLayer.h"
+#include "SimpleAudioEngine.h"
 USING_NS_CC;
 
 GameLayer::~GameLayer()
@@ -163,6 +164,8 @@ void GameLayer::switchMap(int tagetNum)
 	m_hero->setPosition(m_curGameMap->m_heroCurrPos);
 	m_hero->ChangeHeroDirection(m_curGameMap->m_heroDirection);
 	gShowLayer->setCurTier(tagetNum);
+	auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+	audio->playEffect("sounds/shangxialou.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 }
 
 void GameLayer::onKeyPressed(EventKeyboard::KeyCode keyCode, Event * event)

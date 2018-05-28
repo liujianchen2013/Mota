@@ -5,10 +5,13 @@
 #include "Tool/GameSave.h"
 #include "Layer/MenuLayer.h"
 #include "Config/EnToCh.h"
+#include "SimpleAudioEngine.h"
 
 MainScene::~MainScene()
 {
-
+	//销毁声音缓存
+	auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+	audio->unloadEffect("sounds/kaimen.mp3");
 }
 
 cocos2d::Scene * MainScene::createScene()
@@ -25,6 +28,19 @@ bool MainScene::init()
 	//初始化配置文件
 	gGameConfig.initConfig("Config/Config.json");
 	gEnToCh.init("Config/EnToCh.json");
+	//初始化声音文件
+	auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+	audio->preloadEffect("sounds/kaimen.mp3");
+	audio->preloadEffect("sounds/jianji.mp3");
+	audio->preloadEffect("sounds/huodewupin.mp3");
+	audio->preloadEffect("sounds/cuowu.mp3");
+	audio->preloadEffect("sounds/queding.mp3");
+	audio->preloadEffect("sounds/quxiao.mp3");
+	audio->preloadEffect("sounds/shangxialou.mp3");
+	audio->preloadEffect("sounds/xuanze.mp3");
+	audio->preloadEffect("sounds/xueping.mp3");
+	//audio->preloadBackgroundMusic("sounds/bgm.wma");
+	audio->playBackgroundMusic("sounds/bgm.wma");
 
 	auto visibleSize = Director::getInstance()->getVisibleSize();
 	GameLayer* gameLayer = GameLayer::createLayer();

@@ -2,6 +2,7 @@
 #include "Tool/GameSave.h"
 #include "Layer/popupLayer.h"
 #include "Config/EnToCh.h"
+#include "SimpleAudioEngine.h"
 USING_NS_CC;
 
 MenuLayer* MenuLayer::m_menuLayer = nullptr;
@@ -22,6 +23,8 @@ MenuLayer * MenuLayer::createLayer()
 
 void MenuLayer::menuStartGameCallback(Ref * sender)
 {
+	auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+	audio->playEffect("sounds/xuanze.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 	// 定义一个弹出层，传入一张背景图
 	PopupLayer* pl = PopupLayer::create("images/bg_1.png");
 	// ContentSize 是可选的设置，可以不设置，如果设置把它当作 9 图缩
@@ -36,9 +39,16 @@ void MenuLayer::menuStartGameCallback(Ref * sender)
 			MenuItem* button = dynamic_cast<MenuItem*>(sender);
 			if (button->getTag() == 0)//确定
 			{
+				auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+				audio->playEffect("sounds/queding.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 				setMenuVisible(false);
 				gGameSave.saveData();
 				m_isStart = true;
+			}
+			else
+			{
+				auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+				audio->playEffect("sounds/quxiao.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 			}
 		}
 	});
@@ -51,6 +61,8 @@ void MenuLayer::menuStartGameCallback(Ref * sender)
 
 void MenuLayer::menuLoadGameCallback(Ref * sender)
 {
+	auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+	audio->playEffect("sounds/xuanze.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 	if (m_isStart)
 	{
 		// 定义一个弹出层，传入一张背景图
@@ -70,6 +82,13 @@ void MenuLayer::menuLoadGameCallback(Ref * sender)
 					gGameSave.readData();
 					setMenuVisible(false);
 					m_isStart = true;
+					auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+					audio->playEffect("sounds/queding.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
+				}
+				else
+				{
+					auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+					audio->playEffect("sounds/quxiao.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 				}
 			}
 		});
@@ -89,6 +108,8 @@ void MenuLayer::menuLoadGameCallback(Ref * sender)
 
 void MenuLayer::menuSaveGameCallback(Ref * sender)
 {
+	auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+	audio->playEffect("sounds/xuanze.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 	// 定义一个弹出层，传入一张背景图
 	PopupLayer* pl = PopupLayer::create("images/bg_1.png");
 	// ContentSize 是可选的设置，可以不设置，如果设置把它当作 9 图缩
@@ -105,6 +126,13 @@ void MenuLayer::menuSaveGameCallback(Ref * sender)
 			{
 				gGameSave.saveData();
 				setMenuVisible(false);
+				auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+				audio->playEffect("sounds/queding.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
+			}
+			else
+			{
+				auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+				audio->playEffect("sounds/quxiao.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 			}
 		}
 	});
@@ -117,12 +145,16 @@ void MenuLayer::menuSaveGameCallback(Ref * sender)
 
 void MenuLayer::menuResumeGameCallback(Ref * sender)
 {
+	auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+	audio->playEffect("sounds/xuanze.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 	setMenuVisible(false);
 	m_isStart = true;
 }
 
 void MenuLayer::menuExitGameCallback(Ref * sender)
 {
+	auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+	audio->playEffect("sounds/xuanze.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 	if (m_isStart)
 	{
 		// 定义一个弹出层，传入一张背景图
@@ -140,6 +172,13 @@ void MenuLayer::menuExitGameCallback(Ref * sender)
 				if (button->getTag() == 0)//确定
 				{
 					gGameSave.saveData();
+					auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+					audio->playEffect("sounds/queding.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
+				}
+				else
+				{
+					auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+					audio->playEffect("sounds/quxiao.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 				}
 			}
 			Director::getInstance()->end();
@@ -240,12 +279,15 @@ void MenuLayer::setMenuVisible(bool state)
 
 	m_resumeItem->setVisible(m_isStart);
 	m_startItem->setVisible(!m_isStart);
+	auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
 	if (state)
 	{
 		Director::getInstance()->pause();
+		audio->pauseBackgroundMusic();
 	}
 	else
 	{
 		Director::getInstance()->resume();
+		audio->resumeBackgroundMusic();
 	}
 }

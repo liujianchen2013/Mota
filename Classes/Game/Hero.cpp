@@ -3,6 +3,8 @@
 #include "Layer/GameLayer.h"
 #include "Layer/ShowLayer.h"
 #include "Config/EnToCh.h"
+#include "SimpleAudioEngine.h"
+
 USING_NS_CC;
 
 Hero * Hero::createHeroWithFrameName(const std::string frameName)
@@ -113,6 +115,8 @@ CollisionType Hero::Collision(Point position)
 			else
 			{
 				m_gameLayer->showTip(en2ch("Be no fighting match"), this->getPosition() + Point(0,32));
+				auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+				audio->playEffect("sounds/cuowu.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 			}
 			return CT_WALL;
 		}
@@ -282,6 +286,8 @@ void Hero::packupItem(Item * item)
 		tipStr = en2ch(tipStr);
 		tipStr += " +" + Value(item->m_addNum).asString();
 		m_gameLayer->showTip(tipStr, item->getPosition() + Point(0, 32),color);
+		auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+		audio->playEffect("sounds/huodewupin.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 	}
 	
 }
@@ -335,11 +341,15 @@ bool Hero::openDoor(Door * door)
 				tipStr += " -1";
 				m_gameLayer->showTip(tipStr, this->getPosition() + Point(0, 32), tipColor);
 			}
+			auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+			audio->playEffect("sounds/kaimen.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 			return true;
 		}
 		else
 		{
 			m_gameLayer->showTip(en2ch("Not key"), this->getPosition() + Point(0, 32), Color3B::RED);
+			auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+			audio->playEffect("sounds/cuowu.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 		}
 	}
 	return false;
@@ -366,5 +376,7 @@ bool Hero::enemyCombat(Enemy * enemy)
 	std::string tipStr = en2ch("HP");
 	tipStr += " -";
 	m_gameLayer->showTip(tipStr + Value(life).asString(), enemy->getPosition() + Point(0, 32), Color3B::RED);
+	auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+	audio->playEffect("sounds/jianji.mp3"/*, false, 1.0f, 1.0f, 1.0f*/);
 	return true;
 }
