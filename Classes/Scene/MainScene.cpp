@@ -40,7 +40,7 @@ bool MainScene::init()
 	audio->preloadEffect("sounds/xuanze.mp3");
 	audio->preloadEffect("sounds/xueping.mp3");
 	//audio->preloadBackgroundMusic("sounds/bgm.wma");
-	audio->playBackgroundMusic("sounds/bgm.wma");
+	audio->playBackgroundMusic("sounds/bgm.wma",true);
 
 	auto visibleSize = Director::getInstance()->getVisibleSize();
 	GameLayer* gameLayer = GameLayer::createLayer();
