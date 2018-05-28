@@ -282,7 +282,7 @@ void GameMap::initSprite()
 		animFrames.reserve(4);
 		for (int i = 1; i < 5; ++i)
 		{
-			std::string name = "npc01_" + Value(npc->m_id).asString() + "_" + Value(i).asString() + ".png";
+			std::string name = "npc_" + Value(npc->m_id).asString() + "_" + Value(i).asString() + ".png";
 			animFrames.pushBack(spriteFrameCache->getSpriteFrameByName(name));
 		}
 		Animation* animation = Animation::createWithSpriteFrames(animFrames, 0.2f);

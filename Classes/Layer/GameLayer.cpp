@@ -68,6 +68,7 @@ bool GameLayer::init()
 	SpriteFrameCache::getInstance()->addSpriteFramesWithFile("images/item.plist");
 	SpriteFrameCache::getInstance()->addSpriteFramesWithFile("images/wall01.plist");
 	SpriteFrameCache::getInstance()->addSpriteFramesWithFile("images/npc01.plist");
+	SpriteFrameCache::getInstance()->addSpriteFramesWithFile("images/npc02.plist");
 
 	int number = 1;
 	std::string tmxFileName = "Map/" + Value(number).asString() + "/" + Value(number).asString() + ".tmx";
