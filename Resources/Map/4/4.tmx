@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="2018.04.18" orientation="orthogonal" renderorder="right-up" width="13" height="13" tilewidth="32" tileheight="32" infinite="0" nextobjectid="85">
+<map version="1.0" tiledversion="2018.04.18" orientation="orthogonal" renderorder="right-up" width="13" height="13" tilewidth="32" tileheight="32" infinite="0" nextobjectid="102">
  <tileset firstgid="1" source="terrain.tsx"/>
  <layer name="background" width="13" height="13">
   <data encoding="csv">
@@ -21,7 +21,7 @@
  <layer name="wall" width="13" height="13">
   <data encoding="csv">
 2,2,2,2,2,2,2,2,2,2,2,2,2,
-2,0,0,0,2,0,0,0,2,0,0,0,2,
+2,0,0,0,2,3,0,4,2,0,0,0,2,
 2,0,0,0,2,0,0,0,2,0,0,0,2,
 2,0,0,0,2,0,0,0,2,0,0,0,2,
 2,2,0,2,2,2,0,2,2,2,0,2,2,
@@ -164,6 +164,11 @@
   <object id="52" x="320" y="32" width="32" height="32">
    <properties>
     <property name="npc_id" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="101" x="192" y="32" width="32" height="32">
+   <properties>
+    <property name="npc_id" type="int" value="7"/>
    </properties>
   </object>
  </objectgroup>

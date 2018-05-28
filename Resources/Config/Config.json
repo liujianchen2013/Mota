@@ -51,7 +51,9 @@
     ],
     "npc":
     [
-        {"ID":1,"Image":"npc01_1_1.png"},
-        {"ID":2,"Image":"npc01_2_1.png"}
+        {"ID":1,"Image":"npc_1_1.png"},
+        {"ID":2,"Image":"npc_2_1.png"},
+        {"ID":3,"Image":"npc_3_1.png"},
+        {"ID":7,"Image":"npc_7_1.png"}
     ]
 }

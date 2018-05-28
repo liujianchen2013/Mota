@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>npc_1_1.png</key>
+            <key>npc_5_1.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{0,0},{32,32}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>npc_1_2.png</key>
+            <key>npc_5_2.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{32,0},{32,32}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>npc_1_3.png</key>
+            <key>npc_5_3.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{64,0},{32,32}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>npc_1_4.png</key>
+            <key>npc_5_4.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{96,0},{32,32}}</string>
@@ -56,7 +56,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>npc_2_1.png</key>
+            <key>npc_6_1.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{0,32},{32,32}}</string>
@@ -69,7 +69,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>npc_2_2.png</key>
+            <key>npc_6_2.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{32,32},{32,32}}</string>
@@ -82,7 +82,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>npc_2_3.png</key>
+            <key>npc_6_3.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{64,32},{32,32}}</string>
@@ -95,7 +95,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>npc_2_4.png</key>
+            <key>npc_6_4.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{96,32},{32,32}}</string>
@@ -108,7 +108,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>npc_3_1.png</key>
+            <key>npc_7_1.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{0,64},{32,32}}</string>
@@ -121,7 +121,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>npc_3_2.png</key>
+            <key>npc_7_2.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{32,64},{32,32}}</string>
@@ -134,7 +134,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>npc_3_3.png</key>
+            <key>npc_7_3.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{64,64},{32,32}}</string>
@@ -147,7 +147,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>npc_3_4.png</key>
+            <key>npc_7_4.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{96,64},{32,32}}</string>
@@ -160,7 +160,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>npc_4_1.png</key>
+            <key>npc_8_1.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{0,96},{32,32}}</string>
@@ -173,7 +173,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>npc_4_2.png</key>
+            <key>npc_8_2.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{32,96},{32,32}}</string>
@@ -186,7 +186,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>npc_4_3.png</key>
+            <key>npc_8_3.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{64,96},{32,32}}</string>
@@ -199,7 +199,7 @@
                 <key>sourceSize</key>
                 <string>{32,32}</string>
             </dict>
-            <key>npc_4_4.png</key>
+            <key>npc_8_4.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{96,96},{32,32}}</string>
@@ -218,13 +218,13 @@
             <key>format</key>
             <integer>2</integer>
             <key>realTextureFileName</key>
-            <string>npc01.png</string>
+            <string>npc02.png</string>
             <key>size</key>
             <string>{128,2048}</string>
             <key>smartupdate</key>
             <string>$TexturePacker:SmartUpdate:1896b7c20c7f95e597f52e4c40961bb4:1/1$</string>
             <key>textureFileName</key>
-            <string>npc01.png</string>
+            <string>npc02.png</string>
         </dict>
     </dict>
 </plist>
